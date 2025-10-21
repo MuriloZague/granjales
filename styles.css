@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    font-family: "Inter", sans-serif;
 }
 
 body {
@@ -31,7 +32,7 @@ body {
 .textLogo {
     font-size: 1.5rem;
     color: white;
-    font-family: "Inter", sans-serif;
+    
     margin-top: 10px;
 }
 
@@ -39,7 +40,7 @@ body {
     color: white;
     text-decoration: none;
     font-size: 1rem;
-    font-family: "Inter", sans-serif;
+    
 }
 
 .linkSite > a:hover {
@@ -54,8 +55,59 @@ body {
 .homeScreen {
     display: flex;
     height: 90vh;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: 11rem;
+}
+
+.bodyScreen {
+    background-image: url("./src/bgSprite.png");
 }
 
 .galinhaPng {
-    width: 50%;
+    width: 88%;
+    float: right;
+}
+
+.home1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.titleHomeScreen {
+    font-size: 4.5rem;
+    color: white;
+    filter: drop-shadow(4px 6px 5px #00000031);
+}
+
+.verde {
+    color: #008000;
+}
+
+.subTitleHomeScreen {
+    color: white;
+    filter: drop-shadow(4px 6px 5px #00000031);
+}
+
+.btnHomeScreen {
+    background-color: #008000;
+    border: 0;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 1rem;
+    margin-top: 0.6rem;
+    margin-left: -0.1rem;
+    width: 33%;
+    cursor: pointer;
+}
+
+.btnHomeScreen:hover {
+    background-color: #036303;
+    transition: 300ms;
+}
+
+.btnText {
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
 }
