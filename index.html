@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -40,9 +41,15 @@
         </div>
 
         <div class="sliderScreen">
-            <div class="contentSlider">
-                <h1 class="titleSlider">CONHEÇA NOSSOS PRODUTOS</h1>
-                <div class="products">
+        <div class="contentSlider">
+            <h1 class="titleSlider">CONHEÇA NOSSOS PRODUTOS</h1>
+            
+            <div class="carousel-container">
+                
+                <button class="carousel-button" id="prev-slide">❮</button>
+                
+                <div class="products" id="products-carousel">
+                    
                     <div class="product">
                         <div class="productImg">
                             <img src="./src/frango.png" alt="">
@@ -83,9 +90,21 @@
                             <span>Ovos de Codorna</span>
                         </div>
                     </div>
+                    <div class="product">
+                        <div class="productImg">
+                            <img src="./src/ovopufa.png" alt="">
+                        </div>
+                        <div class="productText">
+                            <span>Ovos Pufa</span>
+                        </div>
+                    </div>
+
                 </div>
+                
+                <button class="carousel-button" id="next-slide">❯</button>
             </div>
         </div>
+    </div>
 
         <div class="aboutScreen">
             <h1 class="aboutTitle">POR QUE ESCOLHER A <span class="verde">GRANJALES</span>?</h1>
